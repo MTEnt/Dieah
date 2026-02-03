@@ -2,6 +2,19 @@
 
 Dieah is a multi‑agent orchestration desktop app built with Rust + Tauri. It connects to an existing gateway, surfaces agents, and provides a fast, local‑first chat workspace with memory tools.
 
+## Features
+- Multi‑agent workspace with per‑agent chat
+- Topic tabs per agent (separate session keys)
+- Streaming responses with smooth token rendering
+- Thinking blocks + tool call visualization
+- Markdown + code blocks with one‑click copy
+- Live context gauge (base + “actual” with memory boost)
+- Auto‑summary when context hits 90%
+- Memory injection before every send (local service)
+- Gateway connect + token handling + auto‑reconnect
+- Auto‑restore last agent on launch
+- Installed skills list + curated marketplace view
+
 ## What’s in this repo
 - `dieah-main/` — desktop app (Tauri + Rust backend + UI)
 - `dieah-memory/` — optional local memory service
