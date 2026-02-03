@@ -1,0 +1,9 @@
+[[permission]]
+identifier = "settings-read"
+description = "Read Dieah settings."
+commands.allow = ["get_settings"]
+
+[[permission]]
+identifier = "settings-write"
+description = "Write Dieah settings."
+commands.allow = ["save_settings", "validate_paths"]

@@ -1,0 +1,4 @@
+[[permission]]
+identifier = "openclaw-detect"
+description = "Allow detecting OpenClaw installation and providers."
+commands.allow = ["detect_openclaw", "openclaw_gateway_info", "openclaw_dashboard_token", "openclaw_profiles", "openclaw_profile_paths", "openclaw_models_status", "openclaw_models_list", "openclaw_agents_list", "openclaw_run_in_terminal"]

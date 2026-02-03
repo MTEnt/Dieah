@@ -1,0 +1,11 @@
+[[permission]]
+identifier = "gateway-chat"
+description = "Connect and communicate with the OpenClaw gateway."
+commands.allow = [
+  "gateway_connect",
+  "gateway_disconnect",
+  "gateway_request",
+  "chat_history",
+  "chat_send",
+  "chat_abort",
+]

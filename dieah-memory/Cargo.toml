@@ -1,0 +1,56 @@
+[package]
+name = "dieah-memory"
+version = "0.1.0"
+edition = "2021"
+description = "Memory and context management system for Dieah"
+license = "MIT"
+
+[lib]
+name = "dieah_memory"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dieah-memory-server"
+path = "src/bin/server.rs"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# HTTP server
+axum = "0.7"
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Database
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+# Vector database
+lancedb = "0.15"
+lance-arrow = "0.22"
+arrow-array = "53"
+arrow-schema = "53"
+
+# Embeddings (local via fastembed)
+fastembed = "5.8"
+
+# Token counting
+tiktoken-rs = "0.5"
+
+# Utilities
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4.38", features = ["serde"] }
+thiserror = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+async-trait = "0.1"
+futures = "0.3"
+dirs = "5"
+anyhow = "1"
+
+[dev-dependencies]
+tempfile = "3"
+tokio-test = "0.4"

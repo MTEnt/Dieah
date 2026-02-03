@@ -1,0 +1,31 @@
+# OS
+.DS_Store
+
+# Env / secrets
+.env
+*.env
+
+# Rust
+/target
+**/target
+**/*.rlib
+
+# Tauri / frontend
+**/dist
+**/node_modules
+**/.vite
+**/.turbo
+**/.parcel-cache
+
+# Logs / runtime
+*.log
+*.sqlite
+*.db
+*.jsonl
+
+# Local OpenClaw data
+.openclaw*
+
+# IDE
+.vscode
+.idea

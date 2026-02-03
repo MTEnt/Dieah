@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #6366F1;
+  --color-primary-dim: #4338CA;
+  --color-background: #0D0D0D;
+  --color-surface: #171717;
+  --color-surface-dim: #121212;
+  --color-border: #262626;
+  --color-terminal: #0A0A0A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #94A3B8;
+  --font-ui: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --shadow-glow: 0 0 20px -5px rgba(99, 102, 241, 0.35);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
