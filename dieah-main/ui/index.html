@@ -179,7 +179,7 @@
                 <span class="material-symbols-outlined block dark:hidden">dark_mode</span>
                 <span class="material-symbols-outlined hidden dark:block">light_mode</span>
               </button>
-              <button class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-all shadow-lg shadow-primary/20 hover:shadow-primary/30 border border-transparent">
+              <button id="overview-new-assistant" class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-all shadow-lg shadow-primary/20 hover:shadow-primary/30 border border-transparent">
                 <span class="material-symbols-outlined text-lg">add</span>
                 New Assistant
               </button>
@@ -196,69 +196,49 @@
                 <div class="flex justify-between items-start">
                   <div>
                     <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Total Messages</p>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">124,592</h3>
+                    <h3 id="dash-total-messages" class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">—</h3>
                   </div>
                   <div class="p-2 bg-primary/10 rounded-lg text-primary">
                     <span class="material-symbols-outlined">forum</span>
                   </div>
                 </div>
-                <div class="mt-3 flex items-center gap-2 text-xs">
-                  <span class="text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded font-medium flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[14px]">trending_up</span> 12.5%
-                  </span>
-                  <span class="text-gray-400 dark:text-gray-500">vs last period</span>
-                </div>
+                <div id="dash-total-messages-meta" class="mt-3 text-xs text-gray-400 dark:text-gray-500">No activity yet.</div>
               </div>
               <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-subtle p-5 rounded-xl shadow-sm hover:border-gray-300 dark:hover:border-gray-600 transition-colors group">
                 <div class="flex justify-between items-start">
                   <div>
                     <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Active Assistants</p>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">14</h3>
+                    <h3 id="dash-active-agents" class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">—</h3>
                   </div>
                   <div class="p-2 bg-emerald-500/10 rounded-lg text-emerald-500">
                     <span class="material-symbols-outlined">smart_toy</span>
                   </div>
                 </div>
-                <div class="mt-3 flex items-center gap-2 text-xs">
-                  <span class="text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded font-medium flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[14px]">add</span> 2
-                  </span>
-                  <span class="text-gray-400 dark:text-gray-500">new deployed</span>
-                </div>
+                <div id="dash-active-agents-meta" class="mt-3 text-xs text-gray-400 dark:text-gray-500">Not connected.</div>
               </div>
               <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-subtle p-5 rounded-xl shadow-sm hover:border-gray-300 dark:hover:border-gray-600 transition-colors group">
                 <div class="flex justify-between items-start">
                   <div>
                     <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Avg Response</p>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">1.2s</h3>
+                    <h3 id="dash-avg-response" class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">—</h3>
                   </div>
                   <div class="p-2 bg-orange-500/10 rounded-lg text-orange-500">
                     <span class="material-symbols-outlined">timer</span>
                   </div>
                 </div>
-                <div class="mt-3 flex items-center gap-2 text-xs">
-                  <span class="text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded font-medium flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[14px]">arrow_downward</span> 0.3s
-                  </span>
-                  <span class="text-gray-400 dark:text-gray-500">improvement</span>
-                </div>
+                <div id="dash-avg-response-meta" class="mt-3 text-xs text-gray-400 dark:text-gray-500">No responses yet.</div>
               </div>
               <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-subtle p-5 rounded-xl shadow-sm hover:border-gray-300 dark:hover:border-gray-600 transition-colors group">
                 <div class="flex justify-between items-start">
                   <div>
-                    <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Total Git Pushes</p>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">843</h3>
+                    <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Tokens Today</p>
+                    <h3 id="dash-tokens-today" class="text-2xl font-bold text-gray-900 dark:text-white mt-1 group-hover:text-primary transition-colors">—</h3>
                   </div>
                   <div class="p-2 bg-purple-500/10 rounded-lg text-purple-500">
-                    <span class="material-symbols-outlined">commit</span>
+                    <span class="material-symbols-outlined">data_usage</span>
                   </div>
                 </div>
-                <div class="mt-3 flex items-center gap-2 text-xs">
-                  <span class="text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded font-medium flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[14px]">trending_up</span> 42
-                  </span>
-                  <span class="text-gray-400 dark:text-gray-500">this week</span>
-                </div>
+                <div id="dash-tokens-today-meta" class="mt-3 text-xs text-gray-400 dark:text-gray-500">No tokens yet.</div>
               </div>
             </div>
 
@@ -291,21 +271,21 @@
                   <line class="text-gray-200 dark:text-gray-800" stroke="currentColor" stroke-dasharray="6" stroke-opacity="0.4" x1="0" x2="1000" y1="225" y2="225"></line>
                   <line class="text-gray-200 dark:text-gray-800" stroke="currentColor" stroke-dasharray="6" stroke-opacity="0.4" x1="0" x2="1000" y1="150" y2="150"></line>
                   <line class="text-gray-200 dark:text-gray-800" stroke="currentColor" stroke-dasharray="6" stroke-opacity="0.4" x1="0" x2="1000" y1="75" y2="75"></line>
-                  <path d="M0,250 C100,240 150,150 250,180 C350,210 400,100 500,120 C600,140 650,200 750,160 C850,120 900,50 1000,80" fill="none" stroke="#6366F1" stroke-linecap="round" stroke-width="3" vector-effect="non-scaling-stroke"></path>
-                  <path class="chart-gradient" d="M0,250 C100,240 150,150 250,180 C350,210 400,100 500,120 C600,140 650,200 750,160 C850,120 900,50 1000,80 V300 H0 Z"></path>
+                  <path id="overview-chart-line" d="M0,260 L1000,260" fill="none" stroke="#6366F1" stroke-linecap="round" stroke-width="3" vector-effect="non-scaling-stroke"></path>
+                  <path id="overview-chart-area" class="chart-gradient" d="M0,260 L1000,260 V300 H0 Z"></path>
                 </svg>
                 <div id="overview-chart-hit" class="absolute inset-x-0 top-0 bottom-6 cursor-crosshair"></div>
                 <div id="overview-chart-marker" class="absolute top-0 bottom-6 w-px bg-primary/40 hidden pointer-events-none"></div>
                 <div id="overview-chart-dot" class="absolute size-2 rounded-full bg-primary shadow-[0_0_12px_rgba(99,102,241,0.6)] hidden pointer-events-none"></div>
                 <div id="overview-chart-tooltip" class="absolute z-20 hidden pointer-events-none bg-[#111111] border border-surface-border rounded-lg px-3 py-2 text-xs text-slate-200 shadow-xl w-44"></div>
                 <div class="flex justify-between mt-4 text-xs text-gray-400 dark:text-gray-500 font-medium px-1">
-                  <span>Mon 12</span>
-                  <span>Tue 13</span>
-                  <span>Wed 14</span>
-                  <span>Thu 15</span>
-                  <span>Fri 16</span>
-                  <span>Sat 17</span>
-                  <span>Sun 18</span>
+                  <span id="overview-chart-label-0">--</span>
+                  <span id="overview-chart-label-1">--</span>
+                  <span id="overview-chart-label-2">--</span>
+                  <span id="overview-chart-label-3">--</span>
+                  <span id="overview-chart-label-4">--</span>
+                  <span id="overview-chart-label-5">--</span>
+                  <span id="overview-chart-label-6">--</span>
                 </div>
               </div>
             </div>
@@ -314,52 +294,10 @@
               <div class="lg:col-span-2 bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-subtle rounded-xl shadow-sm overflow-hidden flex flex-col">
                 <div class="px-6 py-4 border-b border-gray-200 dark:border-border-subtle flex justify-between items-center bg-gray-50/50 dark:bg-white/[0.02]">
                   <h3 class="text-base font-semibold text-gray-900 dark:text-white">Recent Conversations</h3>
-                  <a class="text-xs text-primary hover:text-primary-dark font-medium border border-primary/20 bg-primary/5 px-2 py-1 rounded transition-colors" href="#">View All</a>
+                  <a id="overview-view-all" class="text-xs text-primary hover:text-primary-dark font-medium border border-primary/20 bg-primary/5 px-2 py-1 rounded transition-colors" href="#">View All</a>
                 </div>
-                <div class="divide-y divide-gray-100 dark:divide-border-subtle">
-                  <div class="p-4 hover:bg-gray-50 dark:hover:bg-surface-hover transition-colors flex items-center gap-4 group cursor-pointer">
-                    <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 border border-blue-200 dark:border-blue-500/20">
-                      <span class="material-symbols-outlined text-[20px]">code</span>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                    <h4 class="text-sm font-medium text-gray-900 dark:text-white truncate group-hover:text-primary transition-colors">Refactoring Authentication Middleware</h4>
-                      <div class="flex items-center gap-2 mt-1">
-                        <span class="text-xs text-gray-500 dark:text-gray-400">Coding Assistant</span>
-                        <span class="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-600"></span>
-                        <span class="text-xs text-gray-400 dark:text-gray-500">2 mins ago</span>
-                      </div>
-                    </div>
-                    <div class="text-[10px] font-mono font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-background-dark border border-gray-200 dark:border-border-subtle px-2 py-1 rounded">OpenAI Codex</div>
-                  </div>
-                  <div class="p-4 hover:bg-gray-50 dark:hover:bg-surface-hover transition-colors flex items-center gap-4 group cursor-pointer">
-                    <div class="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-500/10 text-purple-600 dark:text-purple-400 flex items-center justify-center flex-shrink-0 border border-purple-200 dark:border-purple-500/20">
-                      <span class="material-symbols-outlined text-[20px]">translate</span>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <h4 class="text-sm font-medium text-gray-900 dark:text-white truncate group-hover:text-primary transition-colors">Localization for Japanese Market</h4>
-                      <div class="flex items-center gap-2 mt-1">
-                        <span class="text-xs text-gray-500 dark:text-gray-400">Translation Bot</span>
-                        <span class="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-600"></span>
-                        <span class="text-xs text-gray-400 dark:text-gray-500">1 hour ago</span>
-                      </div>
-                    </div>
-                    <div class="text-[10px] font-mono font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-background-dark border border-gray-200 dark:border-border-subtle px-2 py-1 rounded">Claude Opus 4.5</div>
-                  </div>
-                  <div class="p-4 hover:bg-gray-50 dark:hover:bg-surface-hover transition-colors flex items-center gap-4 group cursor-pointer">
-                    <div class="w-10 h-10 rounded-lg bg-orange-100 dark:bg-orange-500/10 text-orange-600 dark:text-orange-400 flex items-center justify-center flex-shrink-0 border border-orange-200 dark:border-orange-500/20">
-                      <span class="material-symbols-outlined text-[20px]">bug_report</span>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                      <h4 class="text-sm font-medium text-gray-900 dark:text-white truncate group-hover:text-primary transition-colors">Error Log Analysis #4922</h4>
-                      <div class="flex items-center gap-2 mt-1">
-                        <span class="text-xs text-gray-500 dark:text-gray-400">Debugger</span>
-                        <span class="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-600"></span>
-                        <span class="text-xs text-gray-400 dark:text-gray-500">3 hours ago</span>
-                      </div>
-                    </div>
-                    <div class="text-[10px] font-mono font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-background-dark border border-gray-200 dark:border-border-subtle px-2 py-1 rounded">Gemini 1.5 Pro</div>
-                  </div>
-                </div>
+                <div id="overview-conversations" class="divide-y divide-gray-100 dark:divide-border-subtle"></div>
+                <div id="overview-conversations-empty" class="p-6 text-sm text-gray-500 dark:text-gray-400">No conversations yet.</div>
               </div>
 
               <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-subtle rounded-xl shadow-sm p-6 flex flex-col h-full">
@@ -369,32 +307,8 @@
                     <span class="material-symbols-outlined text-sm">refresh</span>
                   </button>
                 </div>
-                <div class="space-y-3 flex-1">
-                  <div class="flex items-center justify-between p-3 rounded-lg border border-gray-100 dark:border-border-subtle bg-gray-50 dark:bg-surface-hover/50 hover:bg-white dark:hover:bg-surface-hover transition-colors group">
-                    <div class="flex items-center gap-3">
-                      <div class="relative">
-                        <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                        <div class="absolute inset-0 w-2 h-2 rounded-full bg-green-500 animate-ping opacity-75"></div>
-                      </div>
-                      <span class="font-medium text-gray-700 dark:text-gray-200 text-sm">Claude Opus 4.5</span>
-                    </div>
-                    <span class="text-[10px] font-bold tracking-wide text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-500/10 border border-green-200 dark:border-green-500/20 px-2 py-0.5 rounded uppercase">Healthy</span>
-                  </div>
-                  <div class="flex items-center justify-between p-3 rounded-lg border border-gray-100 dark:border-border-subtle bg-gray-50 dark:bg-surface-hover/50 hover:bg-white dark:hover:bg-surface-hover transition-colors group">
-                    <div class="flex items-center gap-3">
-                      <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                      <span class="font-medium text-gray-700 dark:text-gray-200 text-sm">OpenAI Codex</span>
-                    </div>
-                    <span class="text-[10px] font-bold tracking-wide text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-500/10 border border-green-200 dark:border-green-500/20 px-2 py-0.5 rounded uppercase">Healthy</span>
-                  </div>
-                  <div class="flex items-center justify-between p-3 rounded-lg border border-gray-100 dark:border-border-subtle bg-gray-50 dark:bg-surface-hover/50 hover:bg-white dark:hover:bg-surface-hover transition-colors group">
-                    <div class="flex items-center gap-3">
-                      <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
-                      <span class="font-medium text-gray-700 dark:text-gray-200 text-sm">Gemini 1.5 Pro</span>
-                    </div>
-                    <span class="text-[10px] font-bold tracking-wide text-yellow-600 dark:text-yellow-400 bg-yellow-100 dark:bg-yellow-500/10 border border-yellow-200 dark:border-yellow-500/20 px-2 py-0.5 rounded uppercase">Latency</span>
-                  </div>
-                </div>
+                <div id="overview-models-list" class="space-y-3 flex-1"></div>
+                <div id="overview-models-empty" class="text-sm text-gray-500 dark:text-gray-400">No models detected.</div>
                 <button class="w-full mt-4 py-2.5 text-xs font-medium text-gray-500 dark:text-gray-400 border border-dashed border-gray-300 dark:border-gray-700 rounded-lg hover:border-primary hover:text-primary dark:hover:text-primary dark:hover:border-primary bg-transparent hover:bg-gray-50 dark:hover:bg-primary/5 transition-all flex items-center justify-center gap-2 group">
                   <span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">add_link</span>
                   Connect New Model
@@ -1013,6 +927,10 @@
     const lastUserMessageByTab = new Map();
     const autoRetryAttempts = new Map();
     const agentConfigCollapsedKey = "dieah.agentConfigCollapsed";
+    const dashboardStatsKey = "dieah.dashboardStats";
+    let overviewChartData = [];
+    let modelCatalog = [];
+    const runStartTimes = new Map();
 
     const statusColors = ["text-emerald-400", "text-amber-400", "text-red-400", "text-slate-400", "text-slate-500"];
     const dotColors = ["bg-emerald-500", "bg-amber-500", "bg-red-500", "bg-slate-600"];
@@ -2283,6 +2201,7 @@
         }
         const data = await invoke("gateway_request", { method: "agents.list", params: {} });
         renderAgents(data);
+        updateDashboard();
       } catch (error) {
         if (summary) summary.textContent = `Error: ${String(error)}`;
       }
@@ -2414,6 +2333,280 @@
       banner.classList.toggle("hidden", !visible);
     };
 
+    const defaultDashboardStats = () => ({
+      totalMessages: 0,
+      totalTokens: 0,
+      totalRuns: 0,
+      responseTimes: [],
+      daily: {},
+      recentConversations: [],
+    });
+
+    const loadDashboardStats = () => {
+      try {
+        const raw = localStorage.getItem(dashboardStatsKey);
+        if (!raw) return defaultDashboardStats();
+        const parsed = JSON.parse(raw);
+        const stats = { ...defaultDashboardStats(), ...parsed };
+        if (!stats.daily || typeof stats.daily !== "object") stats.daily = {};
+        if (!Array.isArray(stats.responseTimes)) stats.responseTimes = [];
+        if (!Array.isArray(stats.recentConversations)) stats.recentConversations = [];
+        return stats;
+      } catch (error) {
+        return defaultDashboardStats();
+      }
+    };
+
+    const saveDashboardStats = (stats) => {
+      try {
+        localStorage.setItem(dashboardStatsKey, JSON.stringify(stats));
+      } catch (error) {
+        console.warn("Failed to save dashboard stats", error);
+      }
+    };
+
+    const getDateKey = (date) => date.toISOString().slice(0, 10);
+
+    const ensureDailyStats = (stats, key) => {
+      if (!stats.daily[key]) {
+        stats.daily[key] = { messages: 0, tokens: 0, runs: 0 };
+      }
+      return stats.daily[key];
+    };
+
+    const formatShortDate = (date) =>
+      date.toLocaleDateString([], { weekday: "short", day: "2-digit" });
+
+    const formatRelative = (timestamp) => {
+      if (!timestamp) return "";
+      const delta = Date.now() - timestamp;
+      if (delta < 60000) return "just now";
+      if (delta < 3600000) return `${Math.floor(delta / 60000)} mins ago`;
+      if (delta < 86400000) return `${Math.floor(delta / 3600000)} hours ago`;
+      return `${Math.floor(delta / 86400000)} days ago`;
+    };
+
+    const recordDashboardMessage = (role, text, meta = {}) => {
+      if (!text) return;
+      const stats = loadDashboardStats();
+      const tokens = estimateTokens(text || "");
+      stats.totalMessages += 1;
+      stats.totalTokens += tokens;
+      const todayKey = getDateKey(new Date());
+      const daily = ensureDailyStats(stats, todayKey);
+      daily.messages += 1;
+      daily.tokens += tokens;
+
+      if (role === "user") {
+        const agentId = meta.agentId || selectedAgentId || "agent";
+        const agentName = meta.agentName || getAgentName(selectedAgent) || agentId;
+        const modelLabel = meta.modelLabel || resolveAgentModelKey(selectedAgent) || currentDefaultModelKey || "model";
+        const title = text.split(/\n/)[0].trim() || "New conversation";
+        const convoId = `${agentId}:${activeTabId || "main"}`;
+        const next = stats.recentConversations.filter((item) => item.id !== convoId);
+        next.unshift({
+          id: convoId,
+          title: title.length > 48 ? `${title.slice(0, 48)}…` : title,
+          agent: agentName,
+          model: modelLabel,
+          timestamp: Date.now(),
+        });
+        stats.recentConversations = next.slice(0, 6);
+      }
+
+      saveDashboardStats(stats);
+      updateDashboard();
+    };
+
+    const recordDashboardRun = (durationMs) => {
+      const stats = loadDashboardStats();
+      stats.totalRuns += 1;
+      const todayKey = getDateKey(new Date());
+      const daily = ensureDailyStats(stats, todayKey);
+      daily.runs += 1;
+      if (Number.isFinite(durationMs) && durationMs > 0) {
+        stats.responseTimes.push(durationMs);
+        if (stats.responseTimes.length > 50) {
+          stats.responseTimes = stats.responseTimes.slice(-50);
+        }
+      }
+      saveDashboardStats(stats);
+      updateDashboard();
+    };
+
+    const renderOverviewChart = (stats) => {
+      const line = document.getElementById("overview-chart-line");
+      const area = document.getElementById("overview-chart-area");
+      const labels = Array.from({ length: 7 }, (_, idx) =>
+        document.getElementById(`overview-chart-label-${idx}`)
+      );
+      if (!line || !area) return;
+      const days = [];
+      for (let i = 6; i >= 0; i -= 1) {
+        const date = new Date();
+        date.setDate(date.getDate() - i);
+        days.push(date);
+      }
+      overviewChartData = days.map((date) => {
+        const key = getDateKey(date);
+        const daily = stats.daily[key] || { messages: 0, tokens: 0 };
+        return {
+          key,
+          label: formatShortDate(date),
+          tokens: daily.tokens || 0,
+          messages: daily.messages || 0,
+        };
+      });
+      overviewChartData.forEach((point, idx) => {
+        const label = labels[idx];
+        if (label) label.textContent = point.label;
+      });
+
+      const maxTokens = Math.max(1, ...overviewChartData.map((p) => p.tokens));
+      const plotTop = 40;
+      const plotBottom = 260;
+      const width = 1000;
+      const step = overviewChartData.length > 1 ? width / (overviewChartData.length - 1) : width;
+      const points = overviewChartData.map((point, idx) => {
+        const x = idx * step;
+        const y = plotBottom - (point.tokens / maxTokens) * (plotBottom - plotTop);
+        return { x, y };
+      });
+      if (!points.length) return;
+      const linePath = points.map((pt, idx) => `${idx === 0 ? "M" : "L"}${pt.x},${pt.y}`).join(" ");
+      const areaPath = `${linePath} L${points[points.length - 1].x},300 L0,300 Z`;
+      line.setAttribute("d", linePath);
+      area.setAttribute("d", areaPath);
+      line.dataset.maxTokens = String(maxTokens);
+    };
+
+    const renderRecentConversations = (stats) => {
+      const list = document.getElementById("overview-conversations");
+      const empty = document.getElementById("overview-conversations-empty");
+      if (!list || !empty) return;
+      list.innerHTML = "";
+      if (!stats.recentConversations.length) {
+        empty.classList.remove("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+      stats.recentConversations.forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "p-4 hover:bg-gray-50 dark:hover:bg-surface-hover transition-colors flex items-center gap-4 group cursor-pointer";
+        const iconWrap = document.createElement("div");
+        iconWrap.className = "w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 border border-primary/20";
+        iconWrap.innerHTML = '<span class="material-symbols-outlined text-[20px]">chat_bubble</span>';
+        const body = document.createElement("div");
+        body.className = "flex-1 min-w-0";
+        const title = document.createElement("h4");
+        title.className = "text-sm font-medium text-gray-900 dark:text-white truncate group-hover:text-primary transition-colors";
+        title.textContent = item.title || "Conversation";
+        const meta = document.createElement("div");
+        meta.className = "flex items-center gap-2 mt-1";
+        meta.innerHTML = `<span class=\"text-xs text-gray-500 dark:text-gray-400\">${item.agent || "Agent"}</span><span class=\"w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-600\"></span><span class=\"text-xs text-gray-400 dark:text-gray-500\">${formatRelative(item.timestamp)}</span>`;
+        body.appendChild(title);
+        body.appendChild(meta);
+        const model = document.createElement("div");
+        model.className = "text-[10px] font-mono font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-background-dark border border-gray-200 dark:border-border-subtle px-2 py-1 rounded";
+        model.textContent = item.model || "model";
+        row.appendChild(iconWrap);
+        row.appendChild(body);
+        row.appendChild(model);
+        list.appendChild(row);
+      });
+    };
+
+    const normalizeModelLabel = (model) => {
+      if (!model) return "model";
+      if (typeof model === "string") return model;
+      return model.label || model.displayName || model.name || model.key || "model";
+    };
+
+    const deriveModelStatus = (model) => {
+      const raw = (model && (model.status || model.health || model.state)) || "connected";
+      const status = String(raw).toLowerCase();
+      if (status.includes("error") || status.includes("fail")) return "error";
+      if (status.includes("warn") || status.includes("latency")) return "warn";
+      return "ok";
+    };
+
+    const renderConnectedModels = () => {
+      const list = document.getElementById("overview-models-list");
+      const empty = document.getElementById("overview-models-empty");
+      if (!list || !empty) return;
+      list.innerHTML = "";
+      if (!modelCatalog.length) {
+        empty.classList.remove("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+      modelCatalog.forEach((model) => {
+        const label = normalizeModelLabel(model);
+        const state = deriveModelStatus(model);
+        const row = document.createElement("div");
+        row.className = "flex items-center justify-between p-3 rounded-lg border border-gray-100 dark:border-border-subtle bg-gray-50 dark:bg-surface-hover/50 hover:bg-white dark:hover:bg-surface-hover transition-colors group";
+        const left = document.createElement("div");
+        left.className = "flex items-center gap-3";
+        const dot = document.createElement("div");
+        dot.className = `w-2 h-2 rounded-full ${state === "error" ? "bg-red-500" : state === "warn" ? "bg-yellow-500" : "bg-green-500"}`;
+        left.appendChild(dot);
+        const name = document.createElement("span");
+        name.className = "font-medium text-gray-700 dark:text-gray-200 text-sm";
+        name.textContent = label;
+        left.appendChild(name);
+        const tag = document.createElement("span");
+        tag.className = `text-[10px] font-bold tracking-wide px-2 py-0.5 rounded uppercase ${state === "error" ? "text-red-400 bg-red-500/10 border border-red-500/20" : state === "warn" ? "text-yellow-400 bg-yellow-500/10 border border-yellow-500/20" : "text-green-400 bg-green-500/10 border border-green-500/20"}`;
+        tag.textContent = state === "error" ? "Error" : state === "warn" ? "Latency" : "Connected";
+        row.appendChild(left);
+        row.appendChild(tag);
+        list.appendChild(row);
+      });
+    };
+
+    const updateDashboard = () => {
+      const stats = loadDashboardStats();
+      const totalMessages = document.getElementById("dash-total-messages");
+      const totalMessagesMeta = document.getElementById("dash-total-messages-meta");
+      if (totalMessages) totalMessages.textContent = stats.totalMessages.toLocaleString();
+      if (totalMessagesMeta) {
+        totalMessagesMeta.textContent = stats.totalMessages ? "Tracking local sessions." : "No activity yet.";
+      }
+
+      const activeAgents = document.getElementById("dash-active-agents");
+      const activeAgentsMeta = document.getElementById("dash-active-agents-meta");
+      const agentCount = cachedAgents.length || 0;
+      if (activeAgents) activeAgents.textContent = agentCount ? agentCount.toString() : "—";
+      if (activeAgentsMeta) {
+        activeAgentsMeta.textContent = gatewayConnected
+          ? `${agentCount} active`
+          : "Gateway not connected.";
+      }
+
+      const avgResponse = document.getElementById("dash-avg-response");
+      const avgResponseMeta = document.getElementById("dash-avg-response-meta");
+      if (stats.responseTimes.length) {
+        const avgMs = stats.responseTimes.reduce((a, b) => a + b, 0) / stats.responseTimes.length;
+        if (avgResponse) avgResponse.textContent = `${(avgMs / 1000).toFixed(1)}s`;
+        if (avgResponseMeta) avgResponseMeta.textContent = "Across recent runs.";
+      } else {
+        if (avgResponse) avgResponse.textContent = "—";
+        if (avgResponseMeta) avgResponseMeta.textContent = "No responses yet.";
+      }
+
+      const tokensToday = document.getElementById("dash-tokens-today");
+      const tokensTodayMeta = document.getElementById("dash-tokens-today-meta");
+      const todayKey = getDateKey(new Date());
+      const today = stats.daily[todayKey] || { tokens: 0, runs: 0 };
+      if (tokensToday) tokensToday.textContent = today.tokens ? today.tokens.toLocaleString() : "—";
+      if (tokensTodayMeta) {
+        tokensTodayMeta.textContent = today.tokens ? `${today.runs || 0} runs today.` : "No tokens yet.";
+      }
+
+      renderOverviewChart(stats);
+      renderRecentConversations(stats);
+      renderConnectedModels();
+    };
+
     const setSkillsFilter = (filter) => {
       const curated = document.getElementById("skills-curated");
       const all = document.getElementById("skills-all");
@@ -2453,24 +2646,20 @@
       const dot = document.getElementById("overview-chart-dot");
       const tooltip = document.getElementById("overview-chart-tooltip");
       if (!chart || !hit || !marker || !dot || !tooltip) return;
-      const data = [
-        { label: "Mon 12", tokens: 142000, messages: 312 },
-        { label: "Tue 13", tokens: 168000, messages: 348 },
-        { label: "Wed 14", tokens: 154000, messages: 329 },
-        { label: "Thu 15", tokens: 190000, messages: 401 },
-        { label: "Fri 16", tokens: 222000, messages: 444 },
-        { label: "Sat 17", tokens: 178000, messages: 366 },
-        { label: "Sun 18", tokens: 205000, messages: 392 },
-      ];
-      const maxTokens = Math.max(...data.map((point) => point.tokens));
-      const minTokens = Math.min(...data.map((point) => point.tokens));
       const showPoint = (clientX) => {
+        if (!overviewChartData.length) return;
         const rect = hit.getBoundingClientRect();
         const clampedX = Math.min(Math.max(clientX - rect.left, 0), rect.width);
-        const index = Math.min(data.length - 1, Math.max(0, Math.round((clampedX / rect.width) * (data.length - 1))));
-        const point = data[index];
-        const ratio = (point.tokens - minTokens) / (maxTokens - minTokens || 1);
-        const y = rect.height * (1 - ratio);
+        const index = Math.min(
+          overviewChartData.length - 1,
+          Math.max(0, Math.round((clampedX / rect.width) * (overviewChartData.length - 1)))
+        );
+        const point = overviewChartData[index];
+        const maxTokens = Number(chart.querySelector("#overview-chart-line")?.dataset?.maxTokens || 1);
+        const plotTop = 40;
+        const plotBottom = rect.height;
+        const ratio = point.tokens / (maxTokens || 1);
+        const y = plotBottom - ratio * (plotBottom - plotTop);
         marker.style.left = `${clampedX}px`;
         dot.style.left = `${Math.max(0, Math.min(rect.width - 8, clampedX - 4))}px`;
         dot.style.top = `${Math.max(0, Math.min(rect.height - 8, y - 4))}px`;
@@ -2704,6 +2893,7 @@
         const output = status && status.output ? status.output : status;
         const models = Array.isArray(output?.models) ? output.models : [];
         modelContextMap.clear();
+        modelCatalog = models;
         models.forEach((model) => {
           if (model && model.key && typeof model.contextWindow === "number") {
             modelContextMap.set(model.key, model.contextWindow);
@@ -2715,6 +2905,8 @@
         if (currentDefaultModelKey && modelContextMap.has(currentDefaultModelKey)) {
           currentContextLimit = modelContextMap.get(currentDefaultModelKey);
         }
+        renderConnectedModels();
+        updateDashboard();
       } catch (error) {
         console.warn("Failed to load model catalog", error);
       }
@@ -3041,6 +3233,7 @@
         }
         setOverviewLoading("", false);
         setChatStatus("Agents loaded.", "text-emerald-400");
+        updateDashboard();
       } catch (error) {
         setChatStatus(`Agents load failed: ${String(error)}`, "text-red-400");
       }
@@ -3471,6 +3664,11 @@
         }
         appendChatMessage({ role: "user", text: trimmed, timestamp: Date.now(), sessionKey });
         maybeRenameTab(trimmed);
+        recordDashboardMessage("user", trimmed, {
+          agentId: selectedAgentId,
+          agentName: getAgentName(selectedAgent),
+          modelLabel: resolveAgentModelKey(selectedAgent) || currentDefaultModelKey,
+        });
       }
       const memorySettings = getMemorySettings();
       if (memorySettings.enabled) {
@@ -3489,6 +3687,9 @@
         const ack = await invoke("chat_send", { payload: { sessionKey, message: outboundMessage } });
         lastChatRunId = ack?.runId || null;
         activeChatRunId = lastChatRunId;
+        if (lastChatRunId) {
+          runStartTimes.set(lastChatRunId, Date.now());
+        }
         lastChatEventAt = Date.now();
         stallNotified = false;
         startStallWatcher();
@@ -3552,6 +3753,9 @@
         lastChatEventAt = Date.now();
         stallNotified = false;
         startStallWatcher();
+        if (!runStartTimes.has(runId)) {
+          runStartTimes.set(runId, Date.now());
+        }
       }
       if (state === "delta") {
         const parts = extractMessageParts(payload.message);
@@ -3584,6 +3788,18 @@
         }
         if (parts.text) {
           appendMemoryMessage("assistant", parts.text);
+          recordDashboardMessage("assistant", parts.text, {
+            agentId: selectedAgentId,
+            agentName: getAgentName(selectedAgent),
+            modelLabel: resolveAgentModelKey(selectedAgent) || currentDefaultModelKey,
+          });
+        }
+        if (runId && runStartTimes.has(runId)) {
+          const startedAt = runStartTimes.get(runId);
+          runStartTimes.delete(runId);
+          if (startedAt) {
+            recordDashboardRun(Date.now() - startedAt);
+          }
         }
         if (activeTabId) {
           autoRetryAttempts.set(activeTabId, 0);
@@ -3819,6 +4035,22 @@
           setAgentConfigCollapsed(false);
           const step = document.getElementById("step-1");
           if (step) step.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+      const overviewNew = document.getElementById("overview-new-assistant");
+      if (overviewNew) {
+        overviewNew.addEventListener("click", () => {
+          setView("setup");
+          setAgentConfigCollapsed(false);
+          const step = document.getElementById("step-1");
+          if (step) step.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+      const overviewViewAll = document.getElementById("overview-view-all");
+      if (overviewViewAll) {
+        overviewViewAll.addEventListener("click", (event) => {
+          event.preventDefault();
+          setView("agents");
         });
       }
       const navOverview = document.getElementById("nav-overview");
@@ -4233,6 +4465,7 @@
       setOverviewLoading("Loading existing models...", true);
       Promise.all([runDetection(), loadProfiles(), loadSettings()]);
       initOverviewChart();
+      updateDashboard();
       setView("overview");
     });
   </script>
